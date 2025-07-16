@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Coding-skills">Coding Skills</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <p>Frontend Developer & DSA Enthusiast.</p>
+        <h1>Hi, I'm <span>Nityanand</span></h1>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>I'm a 3rd-year Computer Science student at SRM Institute of Science and Technology, Kattankulathur. I’m passionate about web development and have a strong foundation in data structures and algorithms using C++. I enjoy building responsive web interfaces and solving real-world problems through code. Currently, I'm focused on enhancing my frontend skills and contributing to open-source projects.</p>
+
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+         
+            <p class="tab-links"onclick="opentab('Education')">Education</p>
+          </div> 
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>Frontend Development</span><br>HTML, CSS, JavaScript, Responsive UI</li>
+              <li><span> DSA in C++</span><br>Problem solving, STL, LeetCode/GFG</li>
+              <li><span>Git & GitHub</span><br>Version control, collaboration, repo management</li>
+            </ul>
+          </div>
+   
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>Bachelors of Technology</span><br>2027 || S.R.M. University</li>
+              <li><span> Class 12th</span><br>2023 || ABR Foundation School</li>
+              <li><span>class 10th</span><br>2020 || DAV Public School</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div id="Coding-skills">
+    <div class="container">
+      <h1 class="subtitle">Coding Skills </h1>
+      
+      <div class="skills-list">
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Web design</h2>
+          <p>HTML, CSS, JavaScript, Responsive Design</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Programming & DSA </h2>
+          <p>C++, C, Python | LeetCode & GFG Practice | STL & OOPs | DBMS</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>DBMS </h2>
+          <p>SQL, MySQL | Query Writing & Table Design</p>
+          <a href="#">Learn more</a>
+        </div>
+         <div>
+          <i class="fa-solid fa-toolbox"></i>
+          <h2>Tools </h2>
+          <p>Git, GitHub, VS Code</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div id="Portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images\work-1.png" alt="">
+          <div class="layer">
+            <h3>Event Ticket Booking System</h3>
+            <p>The Event Ticket Booking System lets users book and manage event tickets, handling bookings and payments efficiently while ensuring data integrity through normalization.</p>
+            <a href="https://github.com/nityaa19/EventFlow" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images\work-2.png" alt="">
+          <div class="layer">
+            <h3>Facial Recognition Attendance System</h3>
+            <p>The Facial Recognition Attendance System uses AI to automate attendance by verifying faces, ensuring accuracy and secure, contactless tracking.</p>
+            <a href="https://github.com/nityaa19/FaceMark-Attendance" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images\work-3.png" alt="">
+          <div class="layer">
+            <h3> IoT-Based Accident Detection System </h3>
+            <p>The IoT-Based Accident Detection System uses sensors to detect vehicle collisions in real-time and sends instant alerts to emergency contacts or services, enabling faster response and improved road safety.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-envelope"></i> nityanand1909@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 6205247989</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/nitya19___/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            
+            <a href="https://www.hackerrank.com/profile/nk1706" target="_blank" ><i class="fa-brands fa-hackerrank"></i></a>
+            <a href="https://github.com/nityaa19" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/nityanand-kumar-13762b287" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images\resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p> Made with <i class="fa-solid fa-heart"></i> by Nityanand</p>
+    </div>
+  </div>
+
+  <script src="script.js" ></script>
+  
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwZlvvlu2N8OKYvwD3EoBkKMZpYDrIRIz5a0wmHFkHCr3986AOIhIYC82u8SGsGBQKw6A/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML="";
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
